@@ -6,21 +6,31 @@
   </a>
 </p>
 
-> A tui for ledger built with textual
+> A tui for [ledger](https://ledger-cli.org) built with [textual](https://textual.textualize.io)
 
 ## Install
 
+This project uses [uv](https://docs.astral.sh/uv/) for dependency resolution. Installing the project locally is the only option at the moment.
+
+To do so, run the command below:
+
 ```sh
-pip install texledger
+git clone https://github.com/gabriel-pub/texledger
+cd texledger
+uv sync
 ```
 
 ## Usage
+
+Run the command below to invoke the cli. A familiar *textual* interface should launch in your current terminal.
 
 ```sh
 texledger
 ```
 
 ## Run tests
+
+To run tests, ensure the dependencies are installed with `uv sync` and the environment is [activated](https://docs.astral.sh/uv/pip/environments/#creating-a-virtual-environment). Then, run the command below:
 
 ```sh
 pytest
