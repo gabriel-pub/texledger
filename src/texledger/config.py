@@ -1,8 +1,10 @@
 from __future__ import annotations
-from texledger.constants import TEXLEDGER_EXAMPLE_CONFIG_FILE
 
 from typing import Any
 import tomli
+
+
+TEXLEDGER_EXAMPLE_CONFIG_FILE = "examples/config.toml"
 
 
 class ConfigParser:
