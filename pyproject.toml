@@ -21,3 +21,8 @@ dev = [
 [build-system]
 requires = ["uv_build>=0.10.9,<0.11.0"]
 build-backend = "uv_build"
+
+[tool.pytest]
+minversion = "9.0"
+addopts = ["--no-header", "--tb=no", "-ra", "-q"]
+testpaths = ["tests"]
